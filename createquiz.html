@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="lib/css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <meta charset="UTF-8">
+    <title>New Quiz</title>
+</head>
+
+<body>
+<div class="row" id="nav-container"></div>
+<div class="container">
+
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="page-header">
+                <h1>New Quiz</h1>
+                <div id="load-test"></div>
+            </div>
+            <div class="form-group">
+            </div>
+
+
+            <h1>Choose Course</h1>
+            <select class="custom-select">
+                <option selected>select course for quiz</option>
+                <option value=1>Distribuerede Systemer</option>
+                <option value=2>IT-Forandringsledelse</option>
+                <option value=3>Makroøkonomi</option>
+                <option value=4>Finansiering</option>
+            </select>
+
+            <br>Quiz title</br>
+
+            <input type="text" class="form-control" placeholder="Quiz title" id= "inputQuizTitle">
+
+
+            <button style="margin-bottom: 40px" class="btn btn-success" id="create-quiz-button">Next</button>
+            <button style="margin-bottom: 40px" class="btn btn-success" id="cancelQuiz">Cancel</button>
+
+        </div>
+    </div>
+
+</div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <p class="text-muted">2017 © All rights reserved - Exams Quiz.</p>
+    </div>
+</footer>
+<script src="lib/js/jquery-3.2.1.js"></script>
+<script src="lib/js/bootstrap.js"></script>
+<script src="js/sdk.js"></script>
+<script src="js/createquiz.js"></script>
+<script>
+    SDK.loadNav();
+</script>
+
+</body>
+</html>
